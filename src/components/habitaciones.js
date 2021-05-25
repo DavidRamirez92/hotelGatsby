@@ -14,7 +14,9 @@ query($slug:String!){
 			titulo
             contenido
             imagen{
-				gatsbyImageData
+				gatsbyImageData(
+                    formats:[AUTO,WEBP]
+                )
                  }
             }
     }
